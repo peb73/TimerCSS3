@@ -1,6 +1,9 @@
 function Timer(value){
 	this.value = value;
 	this.interval = null;
+
+	this.originalValue = null;
+	this.originalDate = null;
 };
 
 Timer.prototype.getValue = function(){
@@ -23,10 +26,13 @@ Timer.prototype.start = function(){
 	if(this.interval != null)
 		return;
 
+	this.originalValue = this.value;
+	this.originalDate = new Date();
+
 	//start
 	this.interval = setInterval(
 		function(){
-			that.value += 1000;
+			that.value = +(new Date())-that.originalDate+that.originalValue;
 			that.onUpdate();
 		},
 		1000
@@ -40,4 +46,7 @@ Timer.prototype.stop = function(){
 
 	//stop
 	this.interval = clearInterval(this.interval);
+
+	this.originalValue = null;
+	this.originalDate = null;
 }

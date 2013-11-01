@@ -44,7 +44,7 @@ Util.toDateArray = function(value){
 	min<1 ? min = 0 : min = parseInt(min);
 	value = value-min*60;
 
-	var sec = value;
+	var sec = parseInt(value);
 
 	return [/*year,*/day,hour,min,sec];
 };

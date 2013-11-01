@@ -2,12 +2,12 @@ var Store = function(){
 };
 
 Store.setTimer = function(value){
-	localStorage.timer = value;
+	localStorage.TimerCSS3 = value;
 };
 
 Store.getTimer = function(){
-	if(!localStorage.timer){
+	if(!localStorage.TimerCSS3){
 		return 0;
 	}
-	return +localStorage.timer;
+	return +localStorage.TimerCSS3;
 };

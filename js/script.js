@@ -89,7 +89,6 @@ var initialize = function(){
 	var keyFrame3 = generateKeyFrame(360/60*array[3]);
 
 	try{
-		console.log(keyFrame3);
 		document.styleSheets[2].insertRule(keyFrame1.keyFrame,0);
 		document.styleSheets[2].insertRule(keyFrame2.keyFrame,0);
 		document.styleSheets[2].insertRule(keyFrame3.keyFrame,0);
