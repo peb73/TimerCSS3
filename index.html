@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Timer</title>
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/style.css"> 
+	</head>
+	<body>
+		<div class="timer">
+			<div class="name">Timer</div>
+			<div class="value">
+				<div class="days">0</div>
+				<div class="hours">0</div>
+				<div class="min">0</div>
+				<div class="sec">0</div>
+			</div>
+			<div class="loader animate">
+				<div class="container">
+					<div class="frame">
+						<div class="graduate-null"></div>
+						<div class="needle needle-3"></div>
+						<div class="needle needle-2"></div>
+						<div class="needle needle-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="button undo"><i class="fa fa-undo"></i></div>
+
+				<div class="button play"><i class="fa fa-play"></i></div>
+				<div class="button pause"><i class="fa fa-pause"></i></div>
+				
+				<!--div class="button remove"><i class="fa fa-times"></i></div-->
+			</div>
+		</div>
+
+		<script src="./js/jquery-1.10.2.min.js"></script>
+		<script src="./js/Store.js"></script>
+		<script src="./js/Timer.js"></script>
+		<script src="./js/Util.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
