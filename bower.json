@@ -1,0 +1,25 @@
+{
+  "name": "TimerCSS3",
+  "version": "0.0.0",
+  "homepage": "https://github.com/peb73/TimerCSS3",
+  "description": "Timer with css3",
+  "main": "index.html",
+  "authors": [
+    "peb"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "font-awesome": "~4.0.1",
+    "modernizr": "~2.6.2",
+    "normalize-css": "~2.1.3"
+  }
+}
